@@ -10,19 +10,10 @@ Supported answers (case insensitive):
 ## Usage
 
 ```sh
-$ askyes Do something?
+$ askyes Do something? && echo Answer is yes
 Do something? y
-$ echo $?
-0
+Answer is yes
 
-$ askyes Do something?
+$ askyes Do something? && echo Answer is yes
 Do something? n
-$ echo $?
-1
-
-$ askyes Do something?
-Do something? what
-Unknown type of answer
-$ echo $?
-1
 ```
