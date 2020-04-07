@@ -32,7 +32,7 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	answer, err := reader.ReadString('\n')
 	if err != nil {
-		fmt.Println("Unexpected error: %v", err)
+		fmt.Printf("Unexpected error: %v\n", err)
 		os.Exit(1)
 	}
 	answer = strings.ToLower(strings.TrimSpace(answer))
